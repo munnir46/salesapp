@@ -2,8 +2,8 @@ import joblib
 import pandas as pd
 import streamlit as st
 
-model = joblib.load('../models/sales_model.pkl')
-encoder = joblib.load("../models/sales_encoder.pkl")
+model = joblib.load('sales_model.pkl')
+encoder = joblib.load("sales_encoder.pkl")
 
 #Accept user input
 month = st.selectbox ('Select month', ['January', 'February', 'March', 'April', 'May', 'June', 'july', 'August', 'September', 'October', 'November', 'December' ])
